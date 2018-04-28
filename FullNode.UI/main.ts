@@ -11,9 +11,9 @@ testnet = args.some(val => val === "--testnet" || val === "-testnet");
 
 let apiPort;
 if (testnet) {
-  apiPort = 38221;
+  apiPort = 38222;
 } else {
-  apiPort = 37221;
+  apiPort = 37222;
 }
 
 ipcMain.on('get-port', (event, arg) => {

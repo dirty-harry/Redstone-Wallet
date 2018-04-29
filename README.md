@@ -1,12 +1,12 @@
-# Stratis Core
+# Redstone Core
 
 __Warning: we're currently in beta, so use at your own risk.__  
 This is the repository of the Redstone Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
 
-# Building and running the Stratis Core daemon
+# Building and running the Redstone daemon
 
 The Redstone  daemon is the backend REST service, hosting a Redstone node upon which FullNode UI depends.  
-The Redstone daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/stratisproject/StratisBitcoinFullNode/blob/master/Documentation/getting-started.md).
+The Redstone daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/spartacrypt/Redstone/blob/master/Documentation/getting-started.md).
 
 # Building and running the Redstone user interface
 
@@ -38,7 +38,7 @@ npm install
 ## Run the UI in development mode
 
 #### Terminal Window 1
-[Run the daemon](https://github.com/stratisproject/StratisBitcoinFullNode/blob/master/Documentation/getting-started.md)  
+[Run the daemon](https://github.com/spartacrypt/Redstone/blob/master/Documentation/getting-started.md)  
 
 #### Terminal Window 2
 Use `npm run mainnet` to start the UI in mainnet mode or `npm run testnet` to start the UI in testnet mode.  

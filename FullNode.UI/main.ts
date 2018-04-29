@@ -42,7 +42,7 @@ function createWindow() {
     frame: true,
     minWidth: 1150,
     minHeight: 650,
-    title: "Stratis Core"
+    title: "Redstone Wallet"
   });
 
   if (serve) {
@@ -80,7 +80,7 @@ function createWindow() {
 // Some APIs can only be used after this event occurs.
 app.on('ready', () => {
   if (serve) {
-    console.log("Stratis UI was started in development mode. This requires the user to be running the Stratis Full Node Daemon himself.")
+    console.log("Redstone Wallet was started in development mode. This requires the user to be running the Redstone Full Node Daemon himself.")
   }
   else {
     startStratisApi();
@@ -119,7 +119,7 @@ function closeStratisApi() {
     var http2 = require('http');
     const options1 = {
       hostname: 'localhost',
-      port: 37221,
+      port: 37222,
       path: '/api/node/shutdown',
       method: 'POST'
     };
@@ -132,7 +132,7 @@ function closeStratisApi() {
      var http2 = require('http');
      const options2 = {
        hostname: 'localhost',
-       port: 38221,
+       port: 38222,
        path: '/api/node/shutdown',
        method: 'POST'
      };
@@ -147,14 +147,14 @@ function startStratisApi() {
   var stratisProcess;
   const spawnStratis = require('child_process').spawn;
 
-  //Start Stratis Daemon
-  let apiPath = path.resolve(__dirname, 'assets//daemon//Stratis.StratisD');
+  //Start Redstone Daemon
+  let apiPath = path.resolve(__dirname, 'assets//daemon//Redstone.RedstoneD');
   if (os.platform() === 'win32') {
-    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Stratis.StratisD.exe');
+    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Redstone.RedstoneD.exe');
   } else if(os.platform() === 'linux') {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.StratisD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Redstone.RedstoneD');
   } else {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Stratis.StratisD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Redstone.RedstoneD');
   }
 
   if (!testnet) {
@@ -168,7 +168,7 @@ function startStratisApi() {
   }
 
   stratisProcess.stdout.on('data', (data) => {
-    writeLog(`Stratis: ${data}`);
+    writeLog(`Redstone: ${data}`);
   });
 }
 
@@ -196,7 +196,7 @@ function createTray() {
       }
     }
   ]);
-  systemTray.setToolTip('Stratis Core');
+  systemTray.setToolTip('Redstone Wallet');
   systemTray.setContextMenu(contextMenu);
   systemTray.on('click', function() {
     if (!mainWindow.isVisible()) {

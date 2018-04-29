@@ -62,7 +62,7 @@ export class ApiService {
     }
 
     /**
-     * Create a new Stratis wallet.
+     * Create a new Redstone wallet.
      */
     createStratisWallet(data: WalletCreation): Observable<any> {
       return this.http
@@ -71,7 +71,7 @@ export class ApiService {
     }
 
     /**
-     * Recover a Stratis wallet.
+     * Recover a Redstone wallet.
      */
     recoverStratisWallet(data: WalletRecovery): Observable<any> {
       return this.http
@@ -80,7 +80,7 @@ export class ApiService {
     }
 
     /**
-     * Load a Stratis wallet
+     * Load a Redstone wallet
      */
     loadStratisWallet(data: WalletLoad): Observable<any> {
       return this.http

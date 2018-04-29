@@ -113,8 +113,8 @@ export class LoginComponent implements OnInit {
   public onDecryptClicked() {
     this.isDecrypting = true;
     this.globalService.setWalletName(this.openWalletForm.get("selectWallet").value);
-    this.globalService.setCoinName("TestStratis");
-    this.globalService.setCoinUnit("TSTRAT");
+    this.globalService.setCoinName("TestRedstone");
+    this.globalService.setCoinUnit("TXRD");
     this.getCurrentNetwork();
     let walletLoad = new WalletLoad(
       this.openWalletForm.get("selectWallet").value,
@@ -157,12 +157,12 @@ export class LoginComponent implements OnInit {
           if (response.status >= 200 && response.status < 400) {
             let responseMessage = response.json();
             this.globalService.setNetwork(responseMessage.network);
-            if (responseMessage.network === "StratisMain") {
-              this.globalService.setCoinName("Stratis");
-              this.globalService.setCoinUnit("STRAT");
-            } else if (responseMessage.network === "StratisTest") {
-              this.globalService.setCoinName("TestStratis");
-              this.globalService.setCoinUnit("TSTRAT");
+            if (responseMessage.network === "RedstoneMain") {
+              this.globalService.setCoinName("Redstone");
+              this.globalService.setCoinUnit("XRD");
+            } else if (responseMessage.network === "RedstoneTest") {
+              this.globalService.setCoinName("TestRedstone");
+              this.globalService.setCoinUnit("TXRD");
             }
           }
         },

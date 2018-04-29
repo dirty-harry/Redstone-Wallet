@@ -1,18 +1,18 @@
 {
-  "name": "stratis-core",
-  "description": "Stratis Core Wallet",
+  "name": "redstone",
+  "description": "Redstone Wallet",
   "version": "0.2.0",
   "author": {
-    "name": "Stratis Group",
-    "email": "info@stratisplatform.com"
+    "name": "Redstone Blockchain",
+    "email": "info@redstone-blockchain.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/stratisproject/fullnodeui",
+  "homepage": "https://github.com/thecrypt0hunter/Redstone-Wallet.git",
   "keywords": [
-    "fullnode",
+    "node",
     "ui",
-    "stratis",
-    "core",
+    "redstone",
+    "wallet",
     "bitcoin",
     "angular",
     "electron",

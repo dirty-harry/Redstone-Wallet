@@ -1,14 +1,14 @@
 # Stratis Core
 
 __Warning: we're currently in beta, so use at your own risk.__  
-This is the repository of the Stratis Core Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
+This is the repository of the Redstone Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
 
 # Building and running the Stratis Core daemon
 
-The Stratis Core daemon is the backend REST service, hosting a Stratis node upon which FullNode UI depends.  
-The Stratis Core daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/stratisproject/StratisBitcoinFullNode/blob/master/Documentation/getting-started.md).
+The Redstone  daemon is the backend REST service, hosting a Redstone node upon which FullNode UI depends.  
+The Redstone daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/stratisproject/StratisBitcoinFullNode/blob/master/Documentation/getting-started.md).
 
-# Building and running the Stratis Core user interface
+# Building and running the Redstone user interface
 
 ## Install NodeJS
 
@@ -19,12 +19,12 @@ Download and install the latest Long Term Support (LTS) version of NodeJS at: ht
 Clone this repository locally:
 
 ``` bash
-git clone https://www.github.com/stratisproject/FullNodeUI
+git clone https://github.com/thecrypt0hunter/Redstone-Wallet.git
 ```
 
 Navigate to the FullNodeUI folder in a terminal:
 ``` bash
-cd ./FullNodeUI/FullNodeUI.UI
+cd ./Redstone-Wallet/FullNodeUI.UI
 ```
 
 ## Install dependencies with npm:

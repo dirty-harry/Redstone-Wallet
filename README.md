@@ -1,11 +1,11 @@
-# Redstone Core
+# Redstone Wallet
 
-__Warning: we're currently in beta, so use at your own risk.__  
+__Warning: we're currently testing, so use at your own risk.__  
 This is the repository of the Redstone Wallet, a full node staking wallet using Electron and Angular at the front-end and .NET Core with C# in the back-end.
 
 # Building and running the Redstone daemon
 
-The Redstone  daemon is the backend REST service, hosting a Redstone node upon which FullNode UI depends.  
+The Redstone daemon is the backend REST service, hosting a Redstone node upon which FullNode UI depends.  
 The Redstone daemon is hosted in another repository. All information on building and running the daemon can be found [here](https://github.com/spartacrypt/Redstone/blob/master/Documentation/getting-started.md).
 
 # Building and running the Redstone user interface
@@ -14,12 +14,18 @@ The Redstone daemon is hosted in another repository. All information on building
 
 Download and install the latest Long Term Support (LTS) version of NodeJS at: https://nodejs.org/. 
 
+``` bash
+wget https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-x64.tar.xz
+sudo tar -xf node-v8.11.1-linux-x64.tar.xz
+rm node-v8.11.1-linux-x64.tar.xz
+```
+
 ## Getting Started
 
 Clone this repository locally:
 
 ``` bash
-git clone https://github.com/thecrypt0hunter/Redstone-Wallet.git
+git clone --recurse-submodules https://github.com/thecrypt0hunter/Redstone-Wallet.git
 ```
 
 Navigate to the FullNodeUI folder in a terminal:

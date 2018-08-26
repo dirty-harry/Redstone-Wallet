@@ -148,13 +148,13 @@ function startStratisApi() {
   const spawnStratis = require('child_process').spawn;
 
   //Start Redstone Daemon
-  let apiPath = path.resolve(__dirname, 'assets//daemon//Redstone.RedstoneD');
+  let apiPath = path.resolve(__dirname, 'assets//daemon//Redstone//Programs//Redstone.RedstoneD');
   if (os.platform() === 'win32') {
-    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Redstone.RedstoneD.exe');
+    apiPath = path.resolve(__dirname, '..\\..\\resources\\daemon\\Redstone\\Programs\\Redstone.RedstoneD.exe');
   } else if(os.platform() === 'linux') {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Redstone.RedstoneD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Redstone//Programs//Redstone.RedstoneD');
   } else {
-	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Redstone.RedstoneD');
+	  apiPath = path.resolve(__dirname, '..//..//resources//daemon//Redstone//Programs//Redstone.RedstoneD');
   }
 
   if (!testnet) {

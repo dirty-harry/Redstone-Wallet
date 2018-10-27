@@ -28,14 +28,14 @@ Clone this repository locally:
 git clone --recurse-submodules https://github.com/thecrypt0hunter/Redstone-Wallet.git
 ```
 
-Navigate to the FullNodeUI folder in a terminal:
+Navigate to the StratisCore.UI folder in a terminal:
 ``` bash
-cd ./Redstone-Wallet/FullNodeUI.UI
+cd ./Redstone-Wallet/StratisCore.UI
 ```
 
 ## Install dependencies with npm:
 
-From within the FullNodeUI.UI directory run:
+From within the StratisCore.UI directory run:
 
 ``` bash
 npm install
@@ -60,3 +60,5 @@ This will compile the Angular code and spawn the Electron process.
 |`npm run package:mac`|  On a MAC OS, builds your application and generates a `.app` file of your application that can be run on Mac |
 
 **The application is optimised. Only the files of /dist folder are included in the executable.**
+
+
